@@ -191,3 +191,59 @@ Promise.race([
   new Promise((resolve, reject) => setTimeout(() => resolve(3), 3000))
 ]).then(alert); // 1
 </script>
+
+
+
+
+// console.log("Hello, World!");
+
+let userList = [
+  {name :'cheta', age:22},
+  {name: 'harish', age:23},
+  {name:'iranna', age:24}
+]
+
+let newOne = userList.filter((user)=>{return user.age > 22})
+console.log(newOne);
+
+userList.forEach((user)=>{
+  console.log(user)
+})
+
+console.log(userList)
+
+let newList = userList.map((user)=>{
+  // console.log(user.name)
+})
+
+
+let userFilter = userList.filter((user)=>{
+  if(user.age > 22){
+    return user
+  }
+})
+
+console.log(userFilter);
+
+
+let a = userList.filter((user)=>user.age > 23);
+console.log(a)
+
+
+let a = userList.filter((user)=>{
+  return user.age > 23
+})
+
+console.log(a)
+
+
+
+
+
+
+
+
+
+
+
+
